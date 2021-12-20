@@ -1,63 +1,62 @@
 *{
     text-decoration: none;
+    box-sizing: border-box;
 }
 body{
-    background-color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkslategrey;
 }
-body > div{
-    background-color: rgb(255, 255, 255);
-    border: 3px solid green;
-    padding: 5px;
-}
-body > h1, h3{
-    font-size: 150%;
-}
-#info{
-    position: relative;
-    float: left;
-    left: 8px;
-    top: 10px;
-    width: 200px;
-    height: 700px;
-    margin-right: 40px;
-    text-align: left;
-    font-family:'Courier New', Courier, monospace;
-}
-#title{
-    position: relative;
-    float: left;
-    top: 10px;
-    width: 65pc;
-    height: auto;
-    margin-bottom: 5px;
-    font-family: 'Courier New', 'Courier New', Courier, monospace;
-}
-#link_button{
-    position: relative;
-    top: 100px;
-    width: 250px;
-    height: 50px;
-    margin-right: 30px;
-    background-color: lightgreen;
+header{
+    background-color: #666;
+    padding: 15px;
     text-align: center;
+    font-size: 25px;
+    color: white;
 }
-#about{
-    border: 3px solid lightgreen;
-    font-family:'Courier New', Courier, monospace;
-    background-color: whitesmoke;
-    position: relative;
-    top: 5px;
+nav{
     float: left;
-    width: 65pc;
-    padding: 10px;
-    margin-bottom: 10px;
+    width: 30%;
+    height: 490px;
+    background: #ccc;
+    padding: 20px;
 }
-#sources{
-    position: relative;
-    border: 3px solid lightgreen;
-    font-family:'Courier New', Courier, monospace;
-    background-color: whitesmoke;
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li a{
+    font-size: 20px;
+    color: black;
+    background-color: darkgrey;
+}
+a:hover{
+    background-color:lime;
+}
+a:visited{
+    background-color: magenta;
+    color: blue;
+}
+article{
     float: left;
-    width: 65pc;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    font-size: 20px;
+    height: auto;
+}
+section::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+footer{
+    background-color: #777;
     padding: 10px;
+    text-align: center;
+    color: white;
+}
+img{
+    border: 2px solid black;
+    max-width: 100%;
+    max-height: 100%;
 }
